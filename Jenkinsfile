@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout SCM') {
-            steps {
-                git branch: 'dev', url: 'https://github.com/Moodboard-net/simple-apps.git'
-            }
-        }
+        // stage('Checkout SCM') {
+        //     steps {
+        //         git branch: 'dev', url: 'https://github.com/Moodboard-net/simple-apps.git'
+        //     }
+        // }
         stage('Build') {
             steps {
                 sh '''cd apps
