@@ -7,11 +7,7 @@
     "dev": "nodemon app",
     "start": "node app",
     "test": "jest --forceExit testing/",
-<<<<<<< HEAD:apps/package.json
     "test:coverage": "jest --forceExit --coverage testing/"
-=======
-    "test:coverage": "jest --coverage testing/"
->>>>>>> 5c20c67d60b4f2e9bcd1399862f74d33567630e3:package.json
   },
   "author": "Moch Rafi Riadi",
   "license": "ISC",
