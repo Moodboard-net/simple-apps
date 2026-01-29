@@ -3,7 +3,10 @@ const mysql = require('mysql');
 const app = express()
 const path = require('path')
 require('dotenv').config();
+<<<<<<< HEAD:apps/app.js
 const PORT = process.env.PORT;
+=======
+>>>>>>> 5c20c67d60b4f2e9bcd1399862f74d33567630e3:app.js
 
 // Import Middleware
 const logger = require('./middleware/logger')
@@ -29,8 +32,8 @@ app.get('/users', (req, res, next) => {
   })
 });
 
-app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`)
+app.listen(process.env.APP_PORT, () => {
+  console.log(`Example app listening on port ${process.env.APP_PORT}`)
 })
 
 module.exports = app
